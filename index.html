@@ -1,13 +1,13 @@
+This is a complete HTML document that generates a unique, luxury cultural logo for the IIMC 2026 conference. It combines Mughal architectural motifs, medical symbolism, and calligraphic Urdu typography in a single, self-contained visual.
+
 ```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <title>TPHT Advocacy · Doctors as Architects of Change | IFMSA-Pakistan</title>
-  <!-- Google Fonts + Font Awesome 6 -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IIMC 2026 — Luxury Cultural Logo | IFMSA-Pakistan</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600;700&family=DM+Mono:wght@400;500&family=Noto+Nastaliq+Urdu:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
     * {
       margin: 0;
@@ -16,371 +16,456 @@
     }
 
     body {
-      font-family: 'Inter', sans-serif;
-      background: #f9fbfd;
-      color: #152c3b;
-      line-height: 1.5;
-      scroll-behavior: smooth;
-    }
-
-    /* custom scroll */
-    ::-webkit-scrollbar {
-      width: 8px;
-    }
-    ::-webkit-scrollbar-track {
-      background: #e2e8f0;
-    }
-    ::-webkit-scrollbar-thumb {
-      background: #2c7a5e;
-      border-radius: 12px;
-    }
-
-    /* gradients & containers */
-    .bg-soft {
-      background: linear-gradient(120deg, #f0f9f4 0%, #ffffff 100%);
-    }
-    .container {
-      max-width: 1280px;
-      margin: 0 auto;
-      padding: 3rem 2rem;
-    }
-    .section {
-      margin-bottom: 2rem;
+      background: linear-gradient(160deg, #0A0F0A 0%, #111E14 30%, #0D1810 60%, #080E08 100%);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Cormorant Garamond', 'Times New Roman', serif;
+      padding: 40px;
       position: relative;
+      overflow-x: hidden;
     }
-    .section-title {
-      font-size: 2.5rem;
-      font-weight: 800;
-      letter-spacing: -0.02em;
-      background: linear-gradient(135deg, #1b4d3e, #2c7a5e);
-      background-clip: text;
-      -webkit-background-clip: text;
-      color: transparent;
-      margin-bottom: 1rem;
-      font-family: 'Playfair Display', serif;
+
+    /* ── AMBIENT MUGHAL JALI BACKGROUND ── */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 0;
+      opacity: 0.025;
+      background-image:
+        repeating-linear-gradient(45deg, #C9A84C 0px, #C9A84C 1px, transparent 1px, transparent 36px),
+        repeating-linear-gradient(-45deg, #C9A84C 0px, #C9A84C 1px, transparent 1px, transparent 36px);
+      mask-image: radial-gradient(ellipse at 50% 50%, black 40%, transparent 75%);
+      -webkit-mask-image: radial-gradient(ellipse at 50% 50%, black 40%, transparent 75%);
     }
-    .section-sub {
-      font-size: 1.2rem;
-      color: #4a6272;
-      border-left: 4px solid #2c7a5e;
-      padding-left: 1rem;
-      margin-bottom: 2rem;
-      font-weight: 400;
+
+    /* ── SUBTLE GOLDEN PARTICLES ── */
+    .particles {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 0;
     }
-    .card-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 2rem;
-      margin-top: 1.5rem;
+    .particle {
+      position: absolute;
+      width: 2px;
+      height: 2px;
+      background: #C9A84C;
+      border-radius: 50%;
+      animation: floatUp 8s ease-in-out infinite;
+      opacity: 0;
     }
-    .card {
-      background: rgba(255,255,255,0.85);
-      backdrop-filter: blur(2px);
-      border-radius: 2rem;
-      padding: 1.8rem;
-      box-shadow: 0 15px 35px -12px rgba(0,0,0,0.08);
-      transition: all 0.3s ease;
-      border: 1px solid rgba(44,122,94,0.15);
+    .particle:nth-child(1) { left: 10%; top: 80%; animation-delay: 0s; }
+    .particle:nth-child(2) { left: 25%; top: 70%; animation-delay: 1.5s; }
+    .particle:nth-child(3) { left: 40%; top: 85%; animation-delay: 3s; }
+    .particle:nth-child(4) { left: 55%; top: 75%; animation-delay: 4.5s; }
+    .particle:nth-child(5) { left: 70%; top: 90%; animation-delay: 2s; }
+    .particle:nth-child(6) { left: 85%; top: 65%; animation-delay: 5s; }
+    .particle:nth-child(7) { left: 15%; top: 60%; animation-delay: 6s; }
+    .particle:nth-child(8) { left: 50%; top: 95%; animation-delay: 3.5s; }
+    .particle:nth-child(9) { left: 75%; top: 55%; animation-delay: 7s; }
+    .particle:nth-child(10) { left: 90%; top: 80%; animation-delay: 1s; }
+
+    @keyframes floatUp {
+      0% { transform: translateY(0) scale(0.5); opacity: 0; }
+      15% { opacity: 0.7; }
+      50% { opacity: 0.3; transform: translateY(-90px) scale(1.4); }
+      100% { transform: translateY(-180px) scale(0.2); opacity: 0; }
     }
-    .card:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 25px 40px -14px rgba(0,0,0,0.15);
-      border-color: rgba(44,122,94,0.4);
-    }
-    .card-icon {
-      font-size: 2.5rem;
-      color: #2c7a5e;
-      margin-bottom: 1.2rem;
-    }
-    .badge-list {
+
+    /* ── MAIN LOGO CONTAINER ── */
+    .logo-container {
+      position: relative;
+      z-index: 1;
       display: flex;
-      flex-wrap: wrap;
-      gap: 0.7rem;
-      margin: 1.2rem 0;
+      flex-direction: column;
+      align-items: center;
+      gap: 0;
     }
-    .badge {
-      background: #eef4f0;
-      padding: 0.3rem 1rem;
-      border-radius: 40px;
-      font-size: 0.8rem;
-      font-weight: 500;
-      color: #1b4d3e;
-    }
-    .quote-block {
-      background: #eef6f2;
-      border-radius: 2rem;
-      padding: 2rem;
-      font-style: italic;
-      font-size: 1.25rem;
-      font-weight: 500;
-      border-left: 8px solid #2c7a5e;
-      margin: 2rem 0;
-      font-family: 'Playfair Display', serif;
-    }
-    .level-pyramid {
-      background: white;
-      border-radius: 2rem;
-      padding: 2rem;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.03);
-    }
-    .level-item {
+
+    /* ── OUTER MUGHAL ARCH FRAME ── */
+    .mughal-frame {
+      position: relative;
+      width: 380px;
+      height: 460px;
+      background: linear-gradient(175deg, #1A1F16 0%, #0F1812 40%, #0A100C 100%);
+      border: 3px solid #C9A84C;
+      box-shadow:
+        0 0 60px rgba(201, 168, 76, 0.25),
+        0 0 120px rgba(201, 168, 76, 0.12),
+        inset 0 0 80px rgba(201, 168, 76, 0.04);
       display: flex;
-      align-items: baseline;
-      gap: 1rem;
-      padding: 0.9rem 0;
-      border-bottom: 1px dashed #dce7e2;
+      align-items: center;
+      justify-content: center;
+      overflow: visible;
     }
-    .level-tag {
-      font-weight: 800;
-      min-width: 130px;
-      font-size: 1rem;
-      color: #1f5e49;
+
+    /* ── ARCH TOP ── */
+    .mughal-frame::before {
+      content: '';
+      position: absolute;
+      top: -42px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 160px;
+      height: 80px;
+      border: 3px solid #C9A84C;
+      border-bottom: none;
+      border-radius: 160px 160px 0 0;
+      background: linear-gradient(180deg, rgba(201,168,76,0.08) 0%, transparent 100%);
+      box-shadow: 0 -8px 30px rgba(201, 168, 76, 0.2);
     }
-    .level-desc {
-      color: #2c3e44;
-      font-size: 0.95rem;
+    .mughal-frame::after {
+      content: '';
+      position: absolute;
+      top: -34px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 140px;
+      height: 66px;
+      border: 1px solid rgba(201, 168, 76, 0.35);
+      border-bottom: none;
+      border-radius: 140px 140px 0 0;
     }
-    .steps-container {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1rem;
-      margin-top: 1.5rem;
-    }
-    .step-card {
-      flex: 1;
-      min-width: 200px;
-      background: #ffffffdd;
-      border-radius: 1.5rem;
-      padding: 1.5rem;
+
+    /* ── INNER CONTENT ── */
+    .logo-inner {
       text-align: center;
-      box-shadow: 0 5px 12px rgba(0,0,0,0.05);
-      border-top: 4px solid #2c7a5e;
+      padding: 30px 25px;
+      position: relative;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
     }
-    .step-number {
-      font-size: 2rem;
-      font-weight: 800;
-      color: #2c7a5e;
-      opacity: 0.6;
-    }
-    .hhh-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 1.8rem;
-      margin: 2rem 0;
-    }
-    .hhh-card {
-      background: white;
-      border-radius: 1.8rem;
-      padding: 2rem 1.5rem;
-      text-align: center;
-      transition: all 0.2s;
-      box-shadow: 0 12px 28px -12px rgba(0,0,0,0.08);
-    }
-    .hhh-icon {
-      font-size: 2.8rem;
-      background: #eef2ef;
+
+    /* ── CENTRAL MEDICAL CRESCENT & STAR ── */
+    .medical-crescent {
+      position: relative;
       width: 80px;
       height: 80px;
-      line-height: 80px;
-      border-radius: 50%;
-      margin: 0 auto 1rem;
-      color: #2c7a5e;
+      margin-bottom: 4px;
+      animation: gentleGlow 4s ease-in-out infinite;
     }
-    .jim-quote {
-      background: #152c3b;
-      color: #f3f9f0;
-      border-radius: 2rem;
-      padding: 2rem 2rem;
-      text-align: center;
-      margin: 2rem 0;
+    @keyframes gentleGlow {
+      0%, 100% { filter: drop-shadow(0 0 12px rgba(201,168,76,0.5)); }
+      50% { filter: drop-shadow(0 0 24px rgba(201,168,76,0.8)); }
     }
-    .footer {
-      background: #0b2b23;
-      color: #cfe6dd;
-      text-align: center;
-      padding: 2rem;
-      border-radius: 2rem 2rem 0 0;
-      margin-top: 2rem;
+    .crescent-svg {
+      width: 80px;
+      height: 80px;
     }
-    @media (max-width: 700px) {
-      .container {
-        padding: 2rem 1.2rem;
-      }
-      .section-title {
-        font-size: 2rem;
-      }
-      .level-item {
-        flex-direction: column;
-        gap: 0.2rem;
-      }
-      .level-tag {
-        min-width: auto;
-      }
+    .crescent-path {
+      fill: none;
+      stroke: #C9A84C;
+      stroke-width: 2.8;
+      stroke-linecap: round;
+      animation: crescentDraw 2s ease-out forwards;
     }
-    .hero {
-      text-align: center;
-      padding: 3rem 0 1rem;
+    @keyframes crescentDraw {
+      0% { stroke-dasharray: 250; stroke-dashoffset: 250; }
+      100% { stroke-dasharray: 250; stroke-dashoffset: 0; }
     }
-    .btn-soft {
-      background: #2c7a5e20;
-      border-radius: 40px;
-      padding: 0.5rem 1.2rem;
-      display: inline-block;
+    .star-path {
+      fill: #C9A84C;
+      animation: starAppear 1.5s ease-out 0.8s forwards;
+      opacity: 0;
+    }
+    @keyframes starAppear {
+      0% { opacity: 0; transform: scale(0.3); }
+      100% { opacity: 1; transform: scale(1); }
+    }
+
+    /* ── ROD OF ASCLEPIUS (MEDICAL SYMBOL) ── */
+    .rod-asclepius {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0;
+      margin: 2px 0;
+    }
+    .rod-line {
+      width: 2px;
+      height: 32px;
+      background: linear-gradient(180deg, #C9A84C 0%, #E8C96A 50%, #C9A84C 100%);
+      border-radius: 1px;
+      animation: rodPulse 3s ease-in-out infinite;
+    }
+    @keyframes rodPulse {
+      0%, 100% { box-shadow: 0 0 6px rgba(201,168,76,0.4); }
+      50% { box-shadow: 0 0 16px rgba(201,168,76,0.8); }
+    }
+    .serpent-curve {
+      position: relative;
+      width: 28px;
+      height: 38px;
+      margin-left: -1px;
+    }
+    .serpent-svg {
+      width: 28px;
+      height: 38px;
+    }
+    .serpent-path {
+      fill: none;
+      stroke: #C9A84C;
+      stroke-width: 2.2;
+      stroke-linecap: round;
+      animation: serpentSlither 2.5s ease-in-out infinite alternate;
+    }
+    @keyframes serpentSlither {
+      0% { stroke-dasharray: 80; stroke-dashoffset: 5; }
+      100% { stroke-dasharray: 80; stroke-dashoffset: -5; }
+    }
+
+    /* ── CONFERENCE TITLE ── */
+    .logo-title {
+      font-family: 'Cormorant Garamond', 'Times New Roman', serif;
+      font-size: 19px;
+      font-weight: 700;
+      color: #FFFFFF;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      line-height: 1.1;
+      margin-top: 4px;
+    }
+    .logo-title .gold {
+      color: #E8C96A;
+    }
+    .logo-subtitle {
+      font-family: 'Cormorant Garamond', 'Times New Roman', serif;
+      font-size: 11px;
+      font-weight: 400;
+      font-style: italic;
+      color: rgba(255, 255, 255, 0.55);
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+    }
+
+    /* ── DIVIDER ── */
+    .logo-divider {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      width: 180px;
+      margin: 2px 0;
+    }
+    .logo-divider .line {
+      flex: 1;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, #C9A84C, transparent);
+    }
+    .logo-divider .diamond {
+      width: 6px;
+      height: 6px;
+      background: #C9A84C;
+      transform: rotate(45deg);
+      animation: diamondSpin 6s linear infinite;
+    }
+    @keyframes diamondSpin {
+      0% { transform: rotate(45deg) scale(1); }
+      50% { transform: rotate(225deg) scale(1.5); }
+      100% { transform: rotate(405deg) scale(1); }
+    }
+
+    /* ── URDU CALLIGRAPHY ── */
+    .urdu-calligraphy {
+      font-family: 'Noto Nastaliq Urdu', 'Jameel Noori Nastaleeq', serif;
+      font-size: 22px;
+      color: #E8C96A;
+      direction: rtl;
+      line-height: 1.6;
+      text-shadow: 0 0 20px rgba(201, 168, 76, 0.4);
+      animation: urduGlow 4s ease-in-out infinite;
+    }
+    @keyframes urduGlow {
+      0%, 100% { text-shadow: 0 0 18px rgba(201,168,76,0.35); }
+      50% { text-shadow: 0 0 32px rgba(201,168,76,0.65); }
+    }
+
+    /* ── YEAR & VENUE ── */
+    .logo-year {
+      font-family: 'DM Mono', 'Courier New', monospace;
+      font-size: 13px;
       font-weight: 500;
+      color: #C9A84C;
+      letter-spacing: 5px;
+      margin-top: 2px;
     }
-    i.fa, i.far, i.fas {
-      margin-right: 6px;
+    .logo-venue {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 8.5px;
+      font-weight: 400;
+      color: rgba(255, 255, 255, 0.35);
+      letter-spacing: 4px;
+      text-transform: uppercase;
+    }
+
+    /* ── CORNER ORNAMENTS ── */
+    .corner-ornament {
+      position: absolute;
+      width: 28px;
+      height: 28px;
+      pointer-events: none;
+      z-index: 2;
+    }
+    .corner-ornament::before,
+    .corner-ornament::after {
+      content: '';
+      position: absolute;
+      background: #C9A84C;
+      opacity: 0.6;
+    }
+    .corner-ornament.top-left { top: -5px; left: -5px; }
+    .corner-ornament.top-right { top: -5px; right: -5px; }
+    .corner-ornament.bottom-left { bottom: -5px; left: -5px; }
+    .corner-ornament.bottom-right { bottom: -5px; right: -5px; }
+    .corner-ornament::before {
+      width: 100%;
+      height: 1.5px;
+      top: 50%;
+      left: 0;
+    }
+    .corner-ornament::after {
+      height: 100%;
+      width: 1.5px;
+      left: 50%;
+      top: 0;
+    }
+    .corner-ornament .dot {
+      position: absolute;
+      width: 5px;
+      height: 5px;
+      background: #E8C96A;
+      border-radius: 50%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      animation: dotPulse 2s ease-in-out infinite;
+    }
+    @keyframes dotPulse {
+      0%, 100% { transform: translate(-50%, -50%) scale(0.8); opacity: 0.5; }
+      50% { transform: translate(-50%, -50%) scale(1.5); opacity: 1; }
+    }
+
+    /* ── IFMSA TAG ── */
+    .ifmsa-tag {
+      font-family: 'DM Mono', 'Courier New', monospace;
+      font-size: 7.5px;
+      letter-spacing: 3px;
+      color: rgba(201, 168, 76, 0.5);
+      text-transform: uppercase;
+      margin-top: 4px;
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 500px) {
+      .mughal-frame {
+        width: 300px;
+        height: 380px;
+      }
+      .mughal-frame::before {
+        width: 130px;
+        height: 64px;
+        top: -34px;
+      }
+      .mughal-frame::after {
+        width: 114px;
+        height: 54px;
+        top: -28px;
+      }
+      .logo-title {
+        font-size: 16px;
+      }
+      .urdu-calligraphy {
+        font-size: 18px;
+      }
     }
   </style>
 </head>
 <body>
-<div class="bg-soft">
-  <div class="container">
-    <!-- Hero -->
-    <div class="hero">
-      <span class="btn-soft"><i class="fas fa-hand-holding-heart"></i> TPHT · IFMSA-Pakistan</span>
-      <h1 class="section-title" style="font-size:3.2rem; margin-top: 1rem;">Public Health Advocacy</h1>
-      <p style="font-size:1.3rem; max-width: 720px; margin: 1rem auto; color: #2c4b3e;">Doctors don't just treat illness — they rewrite the rules that create health.</p>
-      <div class="quote-block" style="background: #e2efe8; margin: 2rem auto; max-width: 800px;">
-        <i class="fas fa-quote-left" style="color:#2c7a5e; margin-right:10px;"></i> "Medical Education does not exist to provide students with a way of making a living, but to ensure the health of the community."
-      </div>
-    </div>
 
-    <!-- Why advocate? + Doctors as advocates -->
-    <div class="section">
-      <h2 class="section-title">Why advocate? <i class="fas fa-bullhorn"></i></h2>
-      <div class="card-grid">
-        <div class="card">
-          <div class="card-icon"><i class="fas fa-eye"></i></div>
-          <h3>Raise awareness</h3>
-          <p>Illuminate silent crises — from air pollution to unequal access — and turn ignorance into public demand.</p>
-        </div>
-        <div class="card">
-          <div class="card-icon"><i class="fas fa-landmark"></i></div>
-          <h3>Influence & change policies</h3>
-          <p>Policy is the invisible stethoscope: it touches millions. Advocacy rewrites those policies for justice.</p>
-        </div>
-        <div class="card">
-          <div class="card-icon"><i class="fas fa-users"></i></div>
-          <h3>Speak for the unheard</h3>
-          <p>Represent individuals and communities who cannot speak for themselves. That’s the oath beyond the oath.</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Definition & Advocacy actions -->
-    <div class="section">
-      <h2 class="section-title">What is Advocacy?</h2>
-      <div class="card" style="background: white; margin-bottom: 1.8rem;">
-        <p style="font-size:1.2rem; font-weight:500;"><i class="fas fa-gavel"></i> Advocacy is the <strong>deliberate process</strong> to directly & indirectly influence decision‑makers, stakeholders and audiences — to support actions that fulfil human rights.</p>
-      </div>
-      <h3 style="margin: 1.5rem 0 0.5rem; font-weight:700;">Advocacy Actions in practice</h3>
-      <div class="badge-list">
-        <span class="badge"><i class="fas fa-bullhorn"></i> Awareness-raising</span>
-        <span class="badge"><i class="fas fa-chart-line"></i> Behaviour change</span>
-        <span class="badge"><i class="fas fa-handshake"></i> Partnerships</span>
-        <span class="badge"><i class="fas fa-comments"></i> Lobbying</span>
-        <span class="badge"><i class="fas fa-flask"></i> Research/Publications</span>
-        <span class="badge"><i class="fas fa-users"></i> Social mobilization</span>
-        <span class="badge"><i class="fas fa-calendar-alt"></i> Conferences & events</span>
-        <span class="badge"><i class="fas fa-fist-raised"></i> Campaigning</span>
-        <span class="badge"><i class="fas fa-file-alt"></i> Policy-making</span>
-      </div>
-    </div>
-
-    <!-- Levels of change (international to interpersonal) -->
-    <div class="section">
-      <h2 class="section-title">Where health is decided</h2>
-      <div class="level-pyramid">
-        <div class="level-item"><span class="level-tag"><i class="fas fa-globe-asia"></i> International</span><span class="level-desc">Debt, greenhouse gas emissions, trade rules, arms trade — global forces shaping local lungs.</span></div>
-        <div class="level-item"><span class="level-tag"><i class="fas fa-map-marked-alt"></i> Regional</span><span class="level-desc">Conflict zones, cross-border trading policies, regional health emergencies.</span></div>
-        <div class="level-item"><span class="level-tag"><i class="fas fa-flag-checkered"></i> National</span><span class="level-desc">Health & education policy, freedom of speech, political representation, land rights.</span></div>
-        <div class="level-item"><span class="level-tag"><i class="fas fa-city"></i> Local authority</span><span class="level-desc">Provision of healthcare, sanitation, local clinics and budget allocation.</span></div>
-        <div class="level-item"><span class="level-tag"><i class="fas fa-tree"></i> Community</span><span class="level-desc">Allocation of land, role of women and children, community health workers.</span></div>
-        <div class="level-item"><span class="level-tag"><i class="fas fa-home"></i> Family</span><span class="level-desc">Who works, who goes to school, resource distribution, intergenerational health.</span></div>
-        <div class="level-item"><span class="level-tag"><i class="fas fa-hand-peace"></i> Interpersonal</span><span class="level-desc">Everyday decision-making, elections, daily choices that ripple into public health.</span></div>
-      </div>
-    </div>
-
-    <!-- Advocacy cycle steps 1-4 -->
-    <div class="section">
-      <h2 class="section-title">The advocacy blueprint</h2>
-      <div class="steps-container">
-        <div class="step-card"><span class="step-number">01</span><h3>Define the situation</h3><p>Evidence-based + human rights lens. Name the problem with precision and compassion.</p></div>
-        <div class="step-card"><span class="step-number">02</span><h3>Goals & Objectives</h3><p>Long-term vision + SMART objectives. Map opportunities & obstacles before moving.</p></div>
-        <div class="step-card"><span class="step-number">03</span><h3>Target Audience</h3><p><strong>Primary:</strong> Decision-makers who hold power.<br><strong>Secondary:</strong> Influencers who shape their will.</p></div>
-        <div class="step-card"><span class="step-number">04</span><h3>Stakeholder mapping</h3><p>Who wins? Who loses? Who holds silent influence? Map the terrain before the battle.</p></div>
-      </div>
-    </div>
-
-    <!-- Key messages + 5C's -->
-    <div class="section">
-      <h2 class="section-title">Craft messages that move mountains</h2>
-      <div class="card" style="background: #fefcf5;">
-        <h3><i class="fas fa-comment-dots"></i> The 5 C's of a key message</h3>
-        <div class="badge-list" style="margin-top: 10px;">
-          <span class="badge" style="background:#dcefe3;">Clear</span>
-          <span class="badge" style="background:#dcefe3;">Compelling</span>
-          <span class="badge" style="background:#dcefe3;">Concise</span>
-          <span class="badge" style="background:#dcefe3;">Consistent</span>
-          <span class="badge" style="background:#dcefe3;">Convincing</span>
-        </div>
-        <p style="margin-top: 1rem;"><i class="fas fa-lightbulb"></i> <strong>Problem → Solution model:</strong> “We want [decision-maker] to do [action] because it will solve/improve [problem Z].” <br> 
-        Combine logic + emotion: facts protect the head, stories protect the heart. <em>Example: tobacco control framed as protecting children — even when the goal is universal protection.</em></p>
-      </div>
-    </div>
-
-    <!-- HEAD HEART HANDS - slide 19 reimagined -->
-    <div class="section">
-      <h2 class="section-title">HEAD · HEART · HANDS</h2>
-      <p class="section-sub">The three chambers of the advocate's soul</p>
-      <div class="hhh-grid">
-        <div class="hhh-card"><div class="hhh-icon"><i class="fas fa-brain"></i></div><h3>HEAD</h3><p>Learn the policy, legislative landscape, partnerships and evidence. Knowledge without action is sterile — but action without knowledge is chaos.</p></div>
-        <div class="hhh-card"><div class="hhh-icon"><i class="fas fa-heart"></i></div><h3>HEART</h3><p>Use your authentic voice and patient stories. Compel change by sharing the human cost. A single story can soften the hardest policy wall.</p></div>
-        <div class="hhh-card"><div class="hhh-icon"><i class="fas fa-hands-helping"></i></div><h3>HANDS</h3><p>Build coalitions, strengthen community power, and act collectively. No one changes a system alone — but together we rewrite laws.</p></div>
-      </div>
-    </div>
-
-    <!-- Take home points – storytelling & evidence -->
-    <div class="section">
-      <h2 class="section-title">Take home · The art of persuasion</h2>
-      <div class="card-grid">
-        <div class="card"><i class="fas fa-chart-simple card-icon"></i><h3>Balance data & story</h3><p>Facts and figures are anchors, but too many numbers sink the ship. Weave statistics with real-life narratives and photographs that sear into memory.</p></div>
-        <div class="card"><i class="fas fa-microphone-alt card-icon"></i><h3>Effective spokesperson</h3><p>Research deeply, speak with real-life stories, maintain a consistent visual style. Your credibility is your currency — invest it wisely.</p></div>
-        <div class="card"><i class="fas fa-chalkboard-user card-icon"></i><h3>Repetition × resonance</h3><p>Key messages must be repeated across multiple channels, by multiple voices, until the truth becomes impossible to ignore.</p></div>
-      </div>
-    </div>
-
-    <!-- Jim Rohn style wrap up / call to action -->
-    <div class="jim-quote">
-      <i class="fas fa-quote-right" style="font-size: 2rem; opacity: 0.5;"></i>
-      <p style="font-size: 1.5rem; font-weight: 500; margin: 1rem 0;">“Don’t wish it was easier. Wish you were better. Don’t wish for less problems. Wish for more skills. Advocate like lives depend on it — because they do.”</p>
-      <p style="margin-top: 1rem;">— Jim Rohn philosophy, channeled for the TPHT trainer</p>
-      <hr style="width: 80px; margin: 1.2rem auto; border-color:#3e7867;">
-      <p><i class="fas fa-graduation-cap"></i> You are not training students to pass exams. You are raising a generation of physician-advocates who redesign the determinants of health. Every policy changed, every life saved — starts with one courageous conversation.</p>
-    </div>
-
-    <!-- additional wrap up + advocacy memory -->
-    <div class="section" style="text-align: center;">
-      <div class="card" style="background: #e7f0ed; max-width: 800px; margin: 1rem auto;">
-        <h3><i class="fas fa-chalkboard"></i> For TPHT Trainers – IFMSA-Pakistan</h3>
-        <p style="margin: 1rem 0;">Empower your trainees to move from awareness to action. Use stakeholder mapping, SMART objectives, and storytelling to turn lectures into movements. <br><strong>The health of Pakistan’s communities will reflect the courage of its medical advocates.</strong></p>
-        <div class="badge-list" style="justify-content: center;">
-          <span class="badge"><i class="fas fa-leaf"></i> Climate & health</span>
-          <span class="badge"><i class="fas fa-smoking-ban"></i> Tobacco control</span>
-          <span class="badge"><i class="fas fa-water"></i> Clean air & water</span>
-          <span class="badge"><i class="fas fa-school"></i> Health literacy</span>
-        </div>
-      </div>
-    </div>
-
-    <footer class="footer">
-      <i class="fas fa-hand-sparkles"></i> Public Health Advocacy · TPHT Curriculum<br>
-      <span style="font-size: 0.85rem;">Inspired by IFMSA global advocacy principles & the heart of Pakistani medical leadership — Trainers, go shape the future.</span><br>
-      <span style="font-size: 0.75rem; opacity: 0.7;">“Advocacy is the deliberate process to fulfil human rights — your voice is the prescription.”</span>
-    </footer>
+  <!-- Ambient golden particles -->
+  <div class="particles">
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
   </div>
-</div>
+
+  <!-- ═══════════════ MAIN LOGO ═══════════════ -->
+  <div class="logo-container">
+
+    <!-- Mughal Arch Frame -->
+    <div class="mughal-frame">
+
+      <!-- Corner Ornaments -->
+      <div class="corner-ornament top-left"><div class="dot"></div></div>
+      <div class="corner-ornament top-right"><div class="dot"></div></div>
+      <div class="corner-ornament bottom-left"><div class="dot"></div></div>
+      <div class="corner-ornament bottom-right"><div class="dot"></div></div>
+
+      <!-- Inner Content -->
+      <div class="logo-inner">
+
+        <!-- Medical Crescent & Star -->
+        <div class="medical-crescent">
+          <svg class="crescent-svg" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+            <!-- Crescent -->
+            <path class="crescent-path" d="M 28 16 A 28 28 0 1 0 52 64 A 22 22 0 1 1 28 16 Z" />
+            <!-- Small star inside crescent -->
+            <polygon class="star-path" points="44,32 46,38 52,38 47,42 49,48 44,44 39,48 41,42 36,38 42,38"
+            transform="translate(-4, -2) scale(0.8)" />
+          </svg>
+        </div>
+
+        <!-- Rod of Asclepius -->
+        <div class="rod-asclepius">
+          <div class="rod-line"></div>
+          <div class="serpent-curve">
+            <svg class="serpent-svg" viewBox="0 0 28 38" xmlns="http://www.w3.org/2000/svg">
+              <path class="serpent-path" d="M 14 2 Q 24 8 14 14 Q 4 20 14 26 Q 24 32 14 36" />
+            </svg>
+          </div>
+        </div>
+
+        <!-- Conference Title -->
+        <div class="logo-title">
+          <span class="gold">IIMC</span> 2026
+        </div>
+        <div class="logo-subtitle">International Internal Medicine Conference</div>
+
+        <!-- Divider -->
+        <div class="logo-divider">
+          <div class="line"></div>
+          <div class="diamond"></div>
+          <div class="line"></div>
+        </div>
+
+        <!-- Urdu Calligraphy -->
+        <div class="urdu-calligraphy" lang="ur">علم روشنی ہے</div>
+
+        <!-- Year & Venue -->
+        <div class="logo-year">LAHORE</div>
+        <div class="logo-venue">Alhamrah Arts Council · Pakistan</div>
+
+        <!-- IFMSA Tag -->
+        <div class="ifmsa-tag">SCORE · IFMSA-Pakistan</div>
+
+      </div>
+    </div>
+
+  </div>
+
 </body>
 </html>
 ```
