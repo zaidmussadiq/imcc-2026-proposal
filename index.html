@@ -1,595 +1,522 @@
-This is a complete HTML document that creates an ultra-luxury, culturally rich logo for GCCSE 2026, fully aligned with Pakistan’s Independence Day. It blends a Mughal‑inspired golden frame, medical‑surgical symbolism, Urdu calligraphy, and subtle patriotic motifs into a single, professional visual.
-
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GCCSE 2026 — Global Congress of Clinical & Surgical Excellence | Pakistan Edition</title>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600;700&family=DM+Mono:wght@400;500&family=Noto+Nastaliq+Urdu:wght@400;600;700&display=swap" rel="stylesheet">
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>IFMSA-Pakistan: A Story of Resilience</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Noto+Serif:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"/>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    :root {
-      --emerald-deep: #0D3320;
-      --emerald: #1A5C3A;
-      --gold-lahore: #C9A84C;
-      --gold-bright: #E8C96A;
-      --gold-pale: #F0DFA8;
-      --ivory: #FDF8F0;
-      --dark-bg: #080E0A;
-      --flag-green: #01411C;
-      --flag-white: #FFFFFF;
-    }
+        body {
+            background: #f9f4ed;
+            font-family: 'Inter', sans-serif;
+            color: #2c2b28;
+        }
 
-    body {
-      background: radial-gradient(ellipse at 50% 40%, #0F1F14 0%, #080E0A 60%, #030503 100%);
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-family: 'Cormorant Garamond', 'Times New Roman', serif;
-      padding: 40px;
-      position: relative;
-      overflow-x: hidden;
-    }
+        /* Container with vintage paper effect */
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            background: #fffdf9;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+            border-radius: 2rem;
+            overflow: hidden;
+            position: relative;
+        }
 
-    /* ── AMBIENT MUGHAL JALI BACKGROUND ── */
-    body::before {
-      content: '';
-      position: fixed;
-      inset: 0;
-      pointer-events: none;
-      z-index: 0;
-      opacity: 0.025;
-      background-image:
-        repeating-linear-gradient(45deg, #C9A84C 0px, #C9A84C 1px, transparent 1px, transparent 36px),
-        repeating-linear-gradient(-45deg, #C9A84C 0px, #C9A84C 1px, transparent 1px, transparent 36px);
-      mask-image: radial-gradient(ellipse at 50% 45%, black 35%, transparent 72%);
-      -webkit-mask-image: radial-gradient(ellipse at 50% 45%, black 35%, transparent 72%);
-    }
+        /* Cultural border motif — miniature Mughal arch pattern */
+        .border-motif {
+            height: 12px;
+            background: repeating-linear-gradient(90deg, #b87c4f, #b87c4f 15px, #e6c8a3 15px, #e6c8a3 30px);
+        }
 
-    /* ── GOLDEN PARTICLES ── */
-    .particles {
-      position: fixed;
-      inset: 0;
-      pointer-events: none;
-      z-index: 0;
-    }
-    .particle {
-      position: absolute;
-      width: 2.5px;
-      height: 2.5px;
-      background: #C9A84C;
-      border-radius: 50%;
-      animation: floatUp 9s ease-in-out infinite;
-      opacity: 0;
-    }
-    .particle:nth-child(1) { left: 8%; top: 78%; animation-delay: 0s; }
-    .particle:nth-child(2) { left: 22%; top: 68%; animation-delay: 1.8s; }
-    .particle:nth-child(3) { left: 38%; top: 84%; animation-delay: 3.2s; }
-    .particle:nth-child(4) { left: 52%; top: 72%; animation-delay: 4.6s; }
-    .particle:nth-child(5) { left: 66%; top: 88%; animation-delay: 2.4s; }
-    .particle:nth-child(6) { left: 78%; top: 62%; animation-delay: 5.5s; }
-    .particle:nth-child(7) { left: 14%; top: 58%; animation-delay: 6.5s; }
-    .particle:nth-child(8) { left: 48%; top: 92%; animation-delay: 3.8s; }
-    .particle:nth-child(9) { left: 72%; top: 52%; animation-delay: 7.2s; }
-    .particle:nth-child(10) { left: 88%; top: 78%; animation-delay: 1.2s; }
-    .particle:nth-child(11) { left: 30%; top: 90%; animation-delay: 4.2s; }
-    .particle:nth-child(12) { left: 60%; top: 55%; animation-delay: 6.8s; }
+        /* ===== HERO SECTION ===== */
+        .hero {
+            background: linear-gradient(135deg, #f5ebe0 0%, #e8d5c4 100%);
+            padding: 4rem 3rem 3rem;
+            text-align: center;
+            position: relative;
+            border-bottom: 3px solid #d4b896;
+        }
 
-    @keyframes floatUp {
-      0% { transform: translateY(0) scale(0.4); opacity: 0; }
-      15% { opacity: 0.65; }
-      50% { opacity: 0.25; transform: translateY(-100px) scale(1.5); }
-      100% { transform: translateY(-200px) scale(0.2); opacity: 0; }
-    }
+        .hero::before {
+            content: "✦ ✦ ✦";
+            font-size: 1.4rem;
+            color: #b87c4f;
+            letter-spacing: 8px;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
 
-    /* ── LOGO CONTAINER ── */
-    .logo-container {
-      position: relative;
-      z-index: 1;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
+        .hero h1 {
+            font-family: 'Noto Serif', serif;
+            font-size: 3.2rem;
+            font-weight: 700;
+            color: #7a4e2a;
+            line-height: 1.2;
+        }
 
-    /* ── OUTER GLOW RINGS ── */
-    .glow-ring {
-      position: absolute;
-      width: 460px;
-      height: 460px;
-      border-radius: 50%;
-      border: 1px solid rgba(201, 168, 76, 0.12);
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      animation: ringPulse 7s ease-in-out infinite;
-      pointer-events: none;
-      z-index: 0;
-    }
-    .glow-ring:nth-child(2) {
-      width: 500px;
-      height: 500px;
-      border-color: rgba(201, 168, 76, 0.06);
-      animation-delay: 1.5s;
-    }
-    @keyframes ringPulse {
-      0%, 100% { transform: translate(-50%, -50%) scale(1); opacity: 0.5; }
-      50% { transform: translate(-50%, -50%) scale(1.07); opacity: 0.9; }
-    }
+        .hero h1 em {
+            font-style: italic;
+            color: #b87c4f;
+        }
 
-    /* ── MUGHAL CHAINED FRAME ── */
-    .mughal-frame {
-      position: relative;
-      width: 480px;
-      height: 560px;
-      background: linear-gradient(175deg, #1A2218 0%, #0F1812 40%, #0A100C 100%);
-      border: 3px solid #C9A84C;
-      box-shadow:
-        0 0 80px rgba(201, 168, 76, 0.25),
-        0 0 160px rgba(201, 168, 76, 0.12),
-        inset 0 0 100px rgba(201, 168, 76, 0.04);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      overflow: visible;
-      z-index: 1;
-    }
+        .hero .subhead {
+            font-size: 1.4rem;
+            font-weight: 300;
+            color: #6b4c2c;
+            margin-top: 0.8rem;
+            letter-spacing: 1px;
+        }
 
-    /* ── CHAINED BORDER EFFECT ── */
-    .mughal-frame::before {
-      content: '';
-      position: absolute;
-      inset: -10px;
-      border: 1.5px dashed rgba(201, 168, 76, 0.35);
-      pointer-events: none;
-      animation: chainGlow 5s ease-in-out infinite;
-    }
-    @keyframes chainGlow {
-      0%, 100% { border-color: rgba(201, 168, 76, 0.3); }
-      50% { border-color: rgba(201, 168, 76, 0.55); }
-    }
+        .hero .urdu-poetry {
+            font-family: 'Noto Serif', serif;
+            font-size: 1.8rem;
+            color: #8b5a2b;
+            margin: 1.2rem 0 0.5rem;
+            line-height: 1.5;
+        }
 
-    /* ── ARCH TOP ── */
-    .mughal-frame::after {
-      content: '';
-      position: absolute;
-      top: -52px;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 200px;
-      height: 100px;
-      border: 3px solid #C9A84C;
-      border-bottom: none;
-      border-radius: 200px 200px 0 0;
-      background: linear-gradient(180deg, rgba(201,168,76,0.12) 0%, transparent 100%);
-      box-shadow: 0 -12px 40px rgba(201,168,76,0.3);
-    }
-    .arch-inner {
-      position: absolute;
-      top: -40px;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 174px;
-      height: 78px;
-      border: 1px solid rgba(201,168,76,0.45);
-      border-bottom: none;
-      border-radius: 174px 174px 0 0;
-      pointer-events: none;
-      z-index: 2;
-    }
-    .arch-keystone {
-      position: absolute;
-      top: -56px;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 16px;
-      height: 16px;
-      background: #C9A84C;
-      border-radius: 50%;
-      z-index: 3;
-      animation: keystoneGlow 3s ease-in-out infinite;
-    }
-    @keyframes keystoneGlow {
-      0%, 100% { box-shadow: 0 0 14px rgba(201,168,76,0.55); }
-      50% { box-shadow: 0 0 28px rgba(201,168,76,0.9); }
-    }
+        .hero .urdu-poetry small {
+            display: block;
+            font-size: 1rem;
+            color: #a87b55;
+            font-style: italic;
+        }
 
-    /* ── CORNER CHAIN LINKS ── */
-    .corner-chain {
-      position: absolute;
-      width: 14px;
-      height: 14px;
-      border: 2px solid #C9A84C;
-      border-radius: 50%;
-      z-index: 4;
-      animation: cornerPulse 4s ease-in-out infinite;
-    }
-    .corner-chain::after {
-      content: '';
-      position: absolute;
-      width: 6px;
-      height: 6px;
-      background: #E8C96A;
-      border-radius: 50%;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
-    .corner-chain.tl { top: -10px; left: -10px; }
-    .corner-chain.tr { top: -10px; right: -10px; animation-delay: 0.5s; }
-    .corner-chain.bl { bottom: -10px; left: -10px; animation-delay: 1s; }
-    .corner-chain.br { bottom: -10px; right: -10px; animation-delay: 1.5s; }
-    @keyframes cornerPulse {
-      0%, 100% { transform: scale(1); border-color: #C9A84C; }
-      50% { transform: scale(1.3); border-color: #E8C96A; }
-    }
+        /* ===== CULTURAL DIVIDER ===== */
+        .divider-custom {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1.5rem;
+            padding: 0.5rem 2rem;
+            background: #fcf6ed;
+        }
 
-    /* ── INNER CONTENT ── */
-    .logo-inner {
-      text-align: center;
-      padding: 30px 28px 25px;
-      position: relative;
-      z-index: 1;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 4px;
-    }
+        .divider-custom span {
+            font-size: 1.2rem;
+            color: #c49a6c;
+        }
 
-    /* ── EMBLEM CONTAINER ── */
-    .emblem-container {
-      position: relative;
-      width: 110px;
-      height: 110px;
-      margin-bottom: 6px;
-      animation: emblemGlow 4s ease-in-out infinite;
-    }
-    @keyframes emblemGlow {
-      0%, 100% { filter: drop-shadow(0 0 16px rgba(201,168,76,0.5)); }
-      50% { filter: drop-shadow(0 0 32px rgba(201,168,76,0.85)); }
-    }
-    .emblem-svg {
-      width: 110px;
-      height: 110px;
-    }
+        /* ===== CONTENT ===== */
+        .content {
+            padding: 2.5rem 3rem;
+        }
 
-    /* ── CRESCENT & STAR ── */
-    .crescent-path {
-      fill: none;
-      stroke: #C9A84C;
-      stroke-width: 2.6;
-      stroke-linecap: round;
-      animation: crescentDraw 2s ease-out forwards;
-    }
-    @keyframes crescentDraw {
-      0% { stroke-dasharray: 280; stroke-dashoffset: 280; }
-      100% { stroke-dasharray: 280; stroke-dashoffset: 0; }
-    }
-    .star-icon {
-      fill: #E8C96A;
-      animation: starAppear 1.5s ease-out 0.8s forwards;
-      opacity: 0;
-    }
-    @keyframes starAppear {
-      0% { opacity: 0; transform: scale(0.2); }
-      100% { opacity: 1; transform: scale(1); }
-    }
+        .section-title {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #7a4e2a;
+            border-left: 6px solid #c28a4e;
+            padding-left: 1.2rem;
+            margin-bottom: 1.5rem;
+        }
 
-    /* ── ROD & SERPENT ── */
-    .rod-line-emblem {
-      stroke: #C9A84C;
-      stroke-width: 2.2;
-      animation: rodGlow 3s ease-in-out infinite;
-    }
-    @keyframes rodGlow {
-      0%, 100% { stroke: #C9A84C; }
-      50% { stroke: #E8C96A; }
-    }
-    .serpent-emblem {
-      fill: none;
-      stroke: #C9A84C;
-      stroke-width: 2.1;
-      stroke-linecap: round;
-      animation: serpentSlither 2.5s ease-in-out infinite alternate;
-    }
-    @keyframes serpentSlither {
-      0% { stroke-dasharray: 75; stroke-dashoffset: 4; }
-      100% { stroke-dasharray: 75; stroke-dashoffset: -4; }
-    }
+        .section-title i {
+            margin-right: 0.5rem;
+        }
 
-    /* ── SCALPEL ── */
-    .scalpel-blade {
-      fill: #E8C96A;
-      animation: bladeShine 2s ease-in-out infinite alternate;
-    }
-    @keyframes bladeShine {
-      0% { fill: #C9A84C; }
-      100% { fill: #F0DFA8; }
-    }
-    .scalpel-handle {
-      stroke: #C9A84C;
-      stroke-width: 2.2;
-      stroke-linecap: round;
-    }
+        /* ===== STORY BLOCK ===== */
+        .story-block {
+            background: #fefaf5;
+            border-radius: 1.5rem;
+            padding: 2rem;
+            border: 1px solid #f0e2d2;
+            margin-bottom: 2rem;
+        }
 
-    /* ── JASMINE FLOWERS ── */
-    .jasmine-petal {
-      fill: rgba(255,255,255,0.85);
-      stroke: #C9A84C;
-      stroke-width: 0.6;
-    }
-    .jasmine-center {
-      fill: #E8C96A;
-    }
+        .story-block p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #3d352c;
+        }
 
-    /* ── SKYLINE & FLAG SILHOUETTE ── */
-    .skyline-path {
-      fill: none;
-      stroke: #C9A84C;
-      stroke-width: 1.8;
-      stroke-linecap: round;
-      stroke-linejoin: round;
-      animation: skylineGlow 4s ease-in-out infinite;
-    }
-    @keyframes skylineGlow {
-      0%, 100% { stroke: #C9A84C; filter: drop-shadow(0 0 4px rgba(201,168,76,0.4)); }
-      50% { stroke: #E8C96A; filter: drop-shadow(0 0 10px rgba(201,168,76,0.7)); }
-    }
-    .flag-rect {
-      fill: #01411C;
-      stroke: #C9A84C;
-      stroke-width: 1.2;
-    }
-    .flag-white-band {
-      fill: #FFFFFF;
-    }
+        .story-block .highlight {
+            background: #f9efdf;
+            padding: 0.1rem 0.4rem;
+            border-radius: 4px;
+            font-weight: 600;
+            color: #8b5a2b;
+        }
 
-    /* ── TITLES ── */
-    .congress-title {
-      font-family: 'Cormorant Garamond', 'Times New Roman', serif;
-      font-size: 18px;
-      font-weight: 700;
-      color: #FFFFFF;
-      letter-spacing: 5px;
-      text-transform: uppercase;
-      line-height: 1.1;
-      margin-top: 12px;
-    }
-    .congress-title .gold {
-      color: #E8C96A;
-    }
-    .congress-subtitle {
-      font-family: 'Cormorant Garamond', 'Times New Roman', serif;
-      font-size: 11px;
-      font-weight: 400;
-      font-style: italic;
-      color: rgba(255,255,255,0.55);
-      letter-spacing: 3.5px;
-      text-transform: uppercase;
-    }
+        /* ===== RECOMMENDATION CARDS ===== */
+        .rec-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin: 1.5rem 0;
+        }
 
-    /* ── DIVIDER ── */
-    .logo-divider {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      width: 220px;
-      margin: 2px 0;
-    }
-    .logo-divider .line {
-      flex: 1;
-      height: 1px;
-      background: linear-gradient(90deg, transparent, #C9A84C, transparent);
-    }
-    .logo-divider .diamond {
-      width: 7px;
-      height: 7px;
-      background: #C9A84C;
-      transform: rotate(45deg);
-      animation: diamondSpin 6s linear infinite;
-    }
-    @keyframes diamondSpin {
-      0% { transform: rotate(45deg) scale(1); }
-      50% { transform: rotate(225deg) scale(1.6); }
-      100% { transform: rotate(405deg) scale(1); }
-    }
+        .rec-card {
+            background: #fefaf5;
+            border-radius: 1.2rem;
+            padding: 1.5rem 1.5rem 1.2rem;
+            border-left: 6px solid #c28a4e;
+            border-bottom: 1px solid #f0e2d2;
+            transition: 0.2s;
+        }
 
-    /* ── URDU CALLIGRAPHY ── */
-    .urdu-calligraphy {
-      font-family: 'Noto Nastaliq Urdu', 'Jameel Noori Nastaleeq', serif;
-      font-size: 26px;
-      color: #E8C96A;
-      direction: rtl;
-      line-height: 1.5;
-      text-shadow: 0 0 24px rgba(201,168,76,0.5);
-      animation: urduGlow 4s ease-in-out infinite;
-      margin-top: 4px;
-    }
-    @keyframes urduGlow {
-      0%, 100% { text-shadow: 0 0 22px rgba(201,168,76,0.45); }
-      50% { text-shadow: 0 0 40px rgba(201,168,76,0.75); }
-    }
+        .rec-card:hover {
+            background: #fcf5ea;
+            transform: translateY(-2px);
+        }
 
-    /* ── DATES & VENUE ── */
-    .logo-dates {
-      font-family: 'DM Mono', 'Courier New', monospace;
-      font-size: 14px;
-      font-weight: 500;
-      color: #C9A84C;
-      letter-spacing: 6px;
-      margin-top: 6px;
-    }
-    .independence-highlight {
-      font-size: 10px;
-      letter-spacing: 4px;
-      color: rgba(255,255,255,0.5);
-      text-transform: uppercase;
-      margin-top: 2px;
-      font-weight: 300;
-    }
-    .logo-venue {
-      font-family: 'DM Sans', sans-serif;
-      font-size: 8.5px;
-      font-weight: 400;
-      color: rgba(255,255,255,0.3);
-      letter-spacing: 4px;
-      text-transform: uppercase;
-      margin-top: 4px;
-    }
+        .rec-card .num {
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: #b87c4f;
+            opacity: 0.4;
+            float: right;
+        }
 
-    .ifmsa-tag {
-      font-family: 'DM Mono', monospace;
-      font-size: 7.5px;
-      letter-spacing: 3.5px;
-      color: rgba(201,168,76,0.5);
-      text-transform: uppercase;
-      margin-top: 8px;
-    }
+        .rec-card h3 {
+            font-weight: 600;
+            color: #7a4e2a;
+            font-size: 1.1rem;
+        }
 
-    /* ── RESPONSIVE ── */
-    @media (max-width: 560px) {
-      .mughal-frame {
-        width: 340px;
-        height: 480px;
-      }
-      .mughal-frame::after {
-        width: 150px;
-        height: 75px;
-        top: -40px;
-      }
-      .arch-inner {
-        width: 130px;
-        height: 58px;
-        top: -32px;
-      }
-      .arch-keystone {
-        top: -44px;
-        width: 12px;
-        height: 12px;
-      }
-      .congress-title {
-        font-size: 15px;
-        letter-spacing: 4px;
-      }
-      .urdu-calligraphy {
-        font-size: 20px;
-      }
-      .logo-dates {
-        font-size: 12px;
-      }
-    }
-  </style>
+        .rec-card p {
+            font-size: 0.95rem;
+            color: #5a4a38;
+            margin-top: 0.3rem;
+            line-height: 1.5;
+        }
+
+        .rec-card .status {
+            display: inline-block;
+            margin-top: 0.6rem;
+            font-size: 0.8rem;
+            font-weight: 600;
+            padding: 0.2rem 0.8rem;
+            border-radius: 20px;
+            background: #e6f0e6;
+            color: #2d6a4f;
+        }
+
+        /* ===== BEFORE & AFTER ===== */
+        .ba-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            background: #faf1e8;
+            border-radius: 1.5rem;
+            padding: 2rem;
+            margin: 2rem 0;
+        }
+
+        .ba-box {
+            background: white;
+            border-radius: 1rem;
+            padding: 1.5rem;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+        }
+
+        .ba-box h4 {
+            font-weight: 700;
+            font-size: 1.1rem;
+        }
+
+        .ba-box.before h4 { color: #b36b5e; }
+        .ba-box.after h4 { color: #2d6a4f; }
+
+        .ba-box ul {
+            list-style: none;
+            padding: 0;
+            margin-top: 0.5rem;
+        }
+
+        .ba-box ul li {
+            padding: 0.4rem 0;
+            border-bottom: 1px solid #f0ece6;
+            font-size: 0.95rem;
+            color: #3d352c;
+        }
+
+        .ba-box ul li:last-child { border-bottom: none; }
+
+        /* ===== EVIDENCE HIGHLIGHT ===== */
+        .evidence-box {
+            background: #f2ebe2;
+            border-radius: 1.2rem;
+            padding: 1.8rem;
+            text-align: center;
+            margin: 1.5rem 0;
+        }
+
+        .evidence-box .big-number {
+            font-size: 3rem;
+            font-weight: 800;
+            color: #7a4e2a;
+        }
+
+        .evidence-box p {
+            font-size: 1rem;
+            color: #5a4a38;
+        }
+
+        /* ===== QUOTE ===== */
+        .quote-block {
+            font-family: 'Noto Serif', serif;
+            background: #f9efdf;
+            border-radius: 2rem;
+            padding: 2rem;
+            text-align: center;
+            font-style: italic;
+            font-size: 1.2rem;
+            color: #6b4c2c;
+            margin: 2rem 0;
+            position: relative;
+        }
+
+        .quote-block i {
+            font-size: 2.2rem;
+            color: #d9b48b;
+            opacity: 0.5;
+        }
+
+        /* ===== CALL TO ACTION ===== */
+        .cta {
+            background: linear-gradient(135deg, #7a4e2a, #9b6a3e);
+            color: white;
+            border-radius: 1.5rem;
+            padding: 2.5rem;
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        .cta h2 {
+            font-size: 2rem;
+            font-weight: 700;
+        }
+
+        .cta p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            margin: 0.8rem 0 1.5rem;
+        }
+
+        .cta .btn {
+            display: inline-block;
+            background: #f5e2cc;
+            color: #7a4e2a;
+            font-weight: 700;
+            padding: 0.8rem 2.5rem;
+            border-radius: 40px;
+            text-decoration: none;
+            transition: 0.2s;
+        }
+
+        .cta .btn:hover {
+            background: #fff;
+            transform: scale(1.02);
+        }
+
+        /* ===== FOOTER ===== */
+        .footer {
+            background: #2c2b28;
+            color: #e9dacb;
+            padding: 2rem 3rem;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+
+        .footer i {
+            color: #b87c4f;
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 800px) {
+            .hero { padding: 2rem 1.5rem; }
+            .hero h1 { font-size: 2.2rem; }
+            .rec-grid { grid-template-columns: 1fr; }
+            .ba-grid { grid-template-columns: 1fr; }
+            .content { padding: 1.5rem; }
+            .hero .urdu-poetry { font-size: 1.3rem; }
+        }
+
+        /* ===== ANIMATION ===== */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeUp 0.8s ease forwards;
+        }
+
+        @keyframes fadeUp {
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .delay-1 { animation-delay: 0.1s; }
+        .delay-2 { animation-delay: 0.2s; }
+        .delay-3 { animation-delay: 0.3s; }
+        .delay-4 { animation-delay: 0.4s; }
+    </style>
 </head>
 <body>
+<div class="container">
 
-  <!-- Ambient particles -->
-  <div class="particles">
-    <div class="particle"></div><div class="particle"></div><div class="particle"></div><div class="particle"></div>
-    <div class="particle"></div><div class="particle"></div><div class="particle"></div><div class="particle"></div>
-    <div class="particle"></div><div class="particle"></div><div class="particle"></div><div class="particle"></div>
-  </div>
+    <!-- Cultural Border -->
+    <div class="border-motif"></div>
 
-  <div class="glow-ring"></div>
-  <div class="glow-ring"></div>
-
-  <div class="logo-container">
-    <div class="mughal-frame">
-      <div class="arch-inner"></div>
-      <div class="arch-keystone"></div>
-      <div class="corner-chain tl"></div>
-      <div class="corner-chain tr"></div>
-      <div class="corner-chain bl"></div>
-      <div class="corner-chain br"></div>
-
-      <div class="logo-inner">
-
-        <!-- CENTRAL EMBLEM with crescent, star, rod, serpent, scalpel, jasmine, skyline, flag -->
-        <div class="emblem-container">
-          <svg class="emblem-svg" viewBox="0 0 110 110" xmlns="http://www.w3.org/2000/svg">
-            <!-- Crescent -->
-            <path class="crescent-path" d="M 34 20 A 34 34 0 1 0 64 76 A 28 28 0 1 1 34 20 Z" />
-            <!-- Star inside crescent -->
-            <polygon class="star-icon" points="54,36 56,42 62,42 57,46 59,52 54,48 49,52 51,46 46,42 52,42"
-            transform="translate(-7, -3) scale(0.75)" />
-
-            <!-- Rod of Asclepius -->
-            <line class="rod-line-emblem" x1="55" y1="58" x2="55" y2="84" />
-            <!-- Serpent -->
-            <path class="serpent-emblem" d="M 55 62 Q 65 59 55 66 Q 45 72 55 78 Q 65 82 55 84" />
-
-            <!-- Surgical Scalpel (crossed) -->
-            <line class="scalpel-handle" x1="42" y1="52" x2="64" y2="82" />
-            <polygon class="scalpel-blade" points="40,48 42,52 36,54" />
-
-            <!-- Jasmine flowers (decorative) -->
-            <g transform="translate(18, 88) scale(0.5)">
-              <circle cx="0" cy="0" r="6" class="jasmine-petal" />
-              <circle cx="6" cy="-4" r="6" class="jasmine-petal" />
-              <circle cx="8" cy="4" r="6" class="jasmine-petal" />
-              <circle cx="4" cy="8" r="6" class="jasmine-petal" />
-              <circle cx="-4" cy="8" r="6" class="jasmine-petal" />
-              <circle cx="-8" cy="4" r="6" class="jasmine-petal" />
-              <circle cx="-6" cy="-4" r="6" class="jasmine-petal" />
-              <circle cx="0" cy="0" r="3" class="jasmine-center" />
-            </g>
-            <g transform="translate(78, 24) scale(0.5)">
-              <circle cx="0" cy="0" r="6" class="jasmine-petal" />
-              <circle cx="6" cy="-4" r="6" class="jasmine-petal" />
-              <circle cx="8" cy="4" r="6" class="jasmine-petal" />
-              <circle cx="4" cy="8" r="6" class="jasmine-petal" />
-              <circle cx="-4" cy="8" r="6" class="jasmine-petal" />
-              <circle cx="-8" cy="4" r="6" class="jasmine-petal" />
-              <circle cx="-6" cy="-4" r="6" class="jasmine-petal" />
-              <circle cx="0" cy="0" r="3" class="jasmine-center" />
-            </g>
-
-            <!-- Modern Skyline silhouette (bottom) -->
-            <path class="skyline-path" d="M 12 90 L 14 82 L 18 82 L 20 88 L 24 88 L 26 80 L 30 80 L 32 86 L 36 86 L 38 78 L 44 78 L 46 84 L 50 84 L 52 76 L 58 76 L 60 82 L 64 82 L 66 74 L 72 74 L 74 80 L 78 80 L 80 72 L 86 72 L 88 78 L 92 78 L 94 70 L 98 70 L 100 76 L 104 76 L 106 90" fill="none" />
-
-            <!-- Small Pakistan flag silhouette at top right -->
-            <rect x="82" y="12" width="14" height="9" class="flag-rect" rx="1" />
-            <rect x="82" y="12" width="4" height="9" class="flag-white-band" rx="1" />
-            <!-- Crescent on flag -->
-            <path d="M 89 15 A 3 3 0 1 0 93 19 A 2.5 2.5 0 0 1 89 15 Z" fill="#FFFFFF" />
-            <polygon points="92,17 93,19 95,19 93.5,20.2 94,22 92,21 90,22 90.5,20.2 89,19 91,19" fill="#FFFFFF" transform="scale(0.8) translate(18,2)" />
-          </svg>
+    <!-- ===== HERO ===== -->
+    <div class="hero fade-in">
+        <h1>IFMSA-<em>Pakistan</em></h1>
+        <div class="subhead">A Story of Resilience • Transparency • Hope</div>
+        <div class="urdu-poetry">
+            <span style="font-size:2rem;">🕌</span><br/>
+            <i>“اُٹھو، میرے وطن کے جوانوں، یہ وقت ہے سنورنے کا”</i>
+            <small>— Faiz Ahmed Faiz</small>
         </div>
-
-        <!-- Congress Title -->
-        <div class="congress-title">
-          <span class="gold">GCCSE</span> 2026
+        <div style="margin-top:1.2rem; font-size:0.9rem; color:#8b6b4a;">
+            <span>🇵🇰 <span style="font-weight:600;">Pakistan</span>  ✦  <span style="font-weight:600;">Asia Pacific</span>  ✦  <span style="font-weight:600;">IFMSA</span> 🇵🇰</span>
         </div>
-        <div class="congress-subtitle">Global Congress of Clinical & Surgical Excellence</div>
-
-        <!-- Divider -->
-        <div class="logo-divider">
-          <div class="line"></div>
-          <div class="diamond"></div>
-          <div class="line"></div>
-        </div>
-
-        <!-- Urdu Calligraphy -->
-        <div class="urdu-calligraphy" lang="ur">علم روشنی ہے</div>
-
-        <!-- Dates & Independence Day tie-in -->
-        <div class="logo-dates">15 - 16 AUGUST</div>
-        <div class="independence-highlight">✦ Pakistan Independence Day Edition ✦</div>
-        <div class="logo-venue">Lahore · Alhamrah Arts Council · IFMSA-Pakistan</div>
-
-        <!-- IFMSA Tag -->
-        <div class="ifmsa-tag">SCORE · IFMSA-Pakistan · Celebrating Freedom & Clinical Excellence</div>
-
-      </div>
     </div>
-  </div>
+
+    <!-- ===== CONTENT ===== -->
+    <div class="content">
+
+        <!-- ===== INTRO STORY ===== -->
+        <div class="story-block fade-in delay-1">
+            <p style="font-size:1.2rem; font-weight:600; color:#7a4e2a;">Assalam-o-Alaikum, dear IFMSA family.</p>
+            <p>
+                <span class="highlight">We are IFMSA-Pakistan.</span> For over two decades, we have been part of this federation — not as perfect members, but as <span class="highlight">a family that stumbles, learns, and rises again.</span> Like the people of our land, we have faced storms. We have fallen. But we have never stayed down.
+            </p>
+            <p style="margin-top:0.8rem;">
+                <span class="highlight">Eighteen months ago, we were suspended.</span> It was a necessary wake-up call. Today, we do not come to you with excuses. We come with <span class="highlight">evidence</span> — the proof of a transformation that has touched every corner of our organization.
+            </p>
+            <p style="margin-top:0.8rem;">
+                <span class="highlight">We are not the same IFMSA-Pakistan.</span> We are stronger. We are transparent. We are accountable. And we are ready to come home.
+            </p>
+        </div>
+
+        <!-- ===== 8 RECOMMENDATIONS ===== -->
+        <h2 class="section-title fade-in delay-1">✦ The Eight Recommendations – Our Promise Fulfilled</h2>
+
+        <div class="rec-grid">
+            <div class="rec-card fade-in delay-1">
+                <span class="num">01</span>
+                <h3>Legal Registration</h3>
+                <p>Engaged Usman Zafar & Co.; completed all documentation. Awaiting final letter from IFMSA to submit to SECP.</p>
+                <span class="status">90% Complete</span>
+            </div>
+            <div class="rec-card fade-in delay-2">
+                <span class="num">02</span>
+                <h3>Official Bank Account</h3>
+                <p><span style="font-weight:600;">✅ Completed.</span> Opened at Soneri Bank — PK86SONE0034820017043391. FBR registered.</p>
+                <span class="status">Completed ✓</span>
+            </div>
+            <div class="rec-card fade-in delay-3">
+                <span class="num">03</span>
+                <h3>External Audit</h3>
+                <p>Clean opinion from Usman Zafar & Co. for 2024-2025. 2023-2024 limited due to former President's non-cooperation.</p>
+                <span class="status">Completed ✓</span>
+            </div>
+            <div class="rec-card fade-in delay-4">
+                <span class="num">04</span>
+                <h3>New Leadership</h3>
+                <p>Democratic elections at NGA 2025 (Sept 13-15, Al Aleem Medical College). Full minutes available.</p>
+                <span class="status">Completed ✓</span>
+            </div>
+            <div class="rec-card fade-in delay-1">
+                <span class="num">05</span>
+                <h3>Excluded Members</h3>
+                <p>All cases (2021-2025) systematically reviewed. No pending cases. Mediation offered to all parties.</p>
+                <span class="status">Completed ✓</span>
+            </div>
+            <div class="rec-card fade-in delay-2">
+                <span class="num">06</span>
+                <h3>Mediation & Conflict Resolution</h3>
+                <p>All conflicting parties given full opportunity at NGA 2025. Observer statements recorded.</p>
+                <span class="status">Completed ✓</span>
+            </div>
+            <div class="rec-card fade-in delay-3">
+                <span class="num">07</span>
+                <h3>Training Programs</h3>
+                <p>3 Provincial Meetings, NGA 25 C&B Session, TOM 1 Training, National CB Week, Feb 2026 Training.</p>
+                <span class="status">Completed ✓</span>
+            </div>
+            <div class="rec-card fade-in delay-4">
+                <span class="num">08</span>
+                <h3>Transparency Portal</h3>
+                <p><span style="font-weight:600;">Flagship digital portal launched.</span> Every member has unique ID, verifiable certificates, investigation module.</p>
+                <span class="status">Completed ✓</span>
+            </div>
+        </div>
+
+        <!-- ===== BEFORE & AFTER ===== -->
+        <h2 class="section-title fade-in delay-1">✦ Before & After — The Transformation</h2>
+        <div class="ba-grid fade-in delay-1">
+            <div class="ba-box before">
+                <h4>❌ Before Suspension</h4>
+                <ul>
+                    <li>No official bank account</li>
+                    <li>No external audit</li>
+                    <li>Excluded members without due process</li>
+                    <li>No transparency systems</li>
+                    <li>Leadership conflicts unaddressed</li>
+                </ul>
+            </div>
+            <div class="ba-box after">
+                <h4>✅ After Transformation</h4>
+                <ul>
+                    <li>✅ Official bank account (Soneri Bank)</li>
+                    <li>✅ Clean audit 2024-2025</li>
+                    <li>✅ All cases reviewed & resolved</li>
+                    <li>✅ Digital portal with unique IDs</li>
+                    <li>✅ Mediation completed; NGA 2025</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- ===== EVIDENCE HIGHLIGHT ===== -->
+        <div class="evidence-box fade-in delay-2">
+            <div class="big-number">1,132</div>
+            <p><strong>active members</strong> — each with a unique ID, verifiable certificates, and a voice.</p>
+            <p style="font-size:0.9rem; margin-top:0.3rem;">🌟 Every transaction tracked. Every voice heard. Every rupee accounted for.</p>
+        </div>
+
+        <!-- ===== QUOTE ===== -->
+        <div class="quote-block fade-in delay-2">
+            <i>“The true test of a people is not how they fall, but how they rise.”</i>
+            <div style="margin-top:0.5rem; font-style:normal; font-size:0.9rem; color:#8b6b4a;">— A Lesson from Pakistan’s valleys and plains</div>
+        </div>
+
+        <!-- ===== CALL TO ACTION ===== -->
+        <div class="cta fade-in delay-3">
+            <h2>🇵🇰 We Are Ready. Will You Walk With Us?</h2>
+            <p>
+                We have done the work. We have opened our books, our portal, and our hearts.<br/>
+                <strong>Seven of eight recommendations are complete.</strong> The final step awaits your trust.
+            </p>
+            <a href="#" class="btn" onclick="alert('🙏 Thank you for your support. IFMSA-Pakistan is ready to return home.')">Support IFMSA-Pakistan</a>
+            <p style="font-size:0.8rem; margin-top:1rem; opacity:0.7;">
+                🙏 Your vote of trust is our bridge back home.
+            </p>
+        </div>
+
+    </div>
+
+    <!-- ===== FOOTER ===== -->
+    <div class="footer">
+        <i class="fas fa-heart" style="margin:0 0.4rem;"></i>
+        IFMSA-Pakistan — A Daughter of this Federation, Ready to Return.
+        <br/>
+        <span style="font-family:'Noto Serif',serif; font-size:0.8rem;">پاکستان زندہ باد</span>
+        <br/>
+        <span style="font-size:0.7rem; opacity:0.6;">Muhammad Zaid, President | ifmsa-pakistan@ifmsa.org</span>
+    </div>
+
+    <div class="border-motif"></div>
+</div>
+
+<!-- Font Awesome for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
 </body>
 </html>
-```
